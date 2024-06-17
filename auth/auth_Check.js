@@ -7,3 +7,9 @@ onAuthStateChanged(auth, (user) => {
     window.location.href = "../index.html";
   }
 });
+
+// Prevenir regresar a index.html
+history.pushState(null, null, location.href);
+window.onpopstate = function () {
+  history.go(1);
+};
