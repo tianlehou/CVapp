@@ -1,0 +1,2 @@
+24/06/16 - v1.00.02 - Se modulizó la animación spinner del index.html, ha dañado todo lo demás y console no marca ningun error. (dejé spinner comentado)
+                    - Se implementó logOut y authCheck al home exitosamente.

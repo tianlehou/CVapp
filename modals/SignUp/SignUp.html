@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+    <div class="auth container auth-card">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- Signup Form-->
+            <form id="signupForm">
+              <h2 class="title">Crear cuenta</h2>
+              <!-- mail-box -->
+              <div class="input-box display-flex-center">
+                <input type="email" id="signupEmail" required />
+                <label for="signupEmail"><i class="bi bi-person-fill"></i>: Correo</label>
+              </div>
+              <!-- password-box -->
+              <div class="input-box">
+                <input type="password" id="signupPassword" required />
+                <label for="signupPassword"><i class="bi bi-key-fill"></i>: Contraseña</label>
+                <i class="bi bi-eye toggle-password" data-target="signupPasswordShow"></i>
+                <i class="bi bi-eye-slash toggle-password hide" data-target="signupPasswordHide"></i>
+              </div>
+              <!-- submit-Button -->
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+                Registrar
+              </button>
+              <p>
+                La importancia de registrarse con un correo válido es que
+                podrás recuperar la contraseña si se te olvida.
+              </p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Cerrar
+              </button>
+            </form>
+          </div>
+          <footer>
+            <p>2024 - Tian Hou</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="modal.js"></script>
+</body>
+</html>

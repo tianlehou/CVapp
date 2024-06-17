@@ -1,0 +1,46 @@
+ /* Estilos para la notificación */
+ .notification {
+     position: fixed;
+     top: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     padding: 10px 20px;
+     background-color: #333;
+     color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+     z-index: 1000;
+     opacity: 0;
+     animation: fadeIn 0.5s forwards, fadeOut 0.5s 2.5s forwards;
+ }
+
+ /* Estilo para notificaciones de éxito */
+ .notification.success {
+     background-color: green;
+ }
+
+ /* Estilo para notificaciones de error */
+ .notification.error {
+     background-color: red;
+ }
+
+ /* Animación para aparecer y desaparecer */
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ @keyframes fadeOut {
+     from {
+         opacity: 1;
+     }
+
+     to {
+         opacity: 0;
+     }
+ }
